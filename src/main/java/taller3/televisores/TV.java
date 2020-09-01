@@ -14,23 +14,23 @@ public class TV {
 		estado = est;
 	}
 	
-	void setMarca (Marca marca) {
+	public void setMarca (Marca marca) {
 		this.marca = marca;
 	}
 	
-	void setControl (Control control) {
+	public void setControl (Control control) {
 		this.control = control;
 	}
 	
-	void setPrecio (int precio) {
+	public void setPrecio (int precio) {
 		this.precio = precio;
 	}
 	
-	void setVolumen (int volumen) {
+	public void setVolumen (int volumen) {
 		this.volumen = volumen;
 	}
 	
-	void setCanal (int canal) {
+	public void setCanal (int canal) {
 		this.canal = canal;
 	}
 	
