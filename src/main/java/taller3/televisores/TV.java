@@ -1,7 +1,7 @@
 package taller3.televisores;
 
 public class TV {
-	Marca marca;
+	public Marca marca;
 	int canal = 1;
 	int precio = 1;
 	boolean estado;
@@ -12,6 +12,7 @@ public class TV {
 	TV (Marca marc, boolean est){
 		marca = marc;
 		estado = est;
+		numTV ++;
 	}
 	
 	public void setMarca (Marca marca) {
@@ -26,12 +27,48 @@ public class TV {
 		this.precio = precio;
 	}
 	
-	public void setVolumen (int volumen) {
-		this.volumen = volumen;
+	public void turnOn() {
+		this.estado = true;
 	}
 	
-	public void setCanal (int canal) {
+	public void turnOff() {
+		this.estado = false;
+	}
+	
+	public void setVolumen (int volumen) {
+		if(this.estado = true & volumen > 0 & volumen <= 7) {
+			this.volumen = volumen;
+			}
+	}
+	
+	public void setCanal(int canal) {
+		if(this.estado = true & canal > 0 & canal <= 120) {
 		this.canal = canal;
+		}
+	}
+	
+	public void volumenUp(){
+		if(this.estado = true & this.volumen < 7) {
+			this.volumen ++;
+		}
+	}
+	
+	public void volumenDown(){
+		if(this.estado = true & this.volumen > 1) {
+			this.volumen --;
+		}
+	}
+	
+	public void canalUp() {
+		if(this.estado = true & this.canal < 120) {
+		this.canal ++;
+		}
+	}
+	
+	public void canalDown() {
+		if(this.estado = true & this.canal > 0) {
+		this.canal --;
+		}
 	}
 	
 	public int getCanal(){
@@ -44,6 +81,22 @@ public class TV {
 	
 	public Marca getMarca() {
 		return this.marca;
+	}
+	
+	public Control getControl() {
+		return this.control;
+	}
+	
+	public int getVolumen() {
+		return this.volumen;
+	}
+	
+	public int getNumTV() {
+		return numTV;
+	}
+	
+	public boolean getEstado() {
+		return this.estado;
 	}
 	
 }
