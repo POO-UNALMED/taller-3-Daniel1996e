@@ -4,9 +4,9 @@ public class TV {
 	public Marca marca;
 	int canal = 1;
 	int precio = 1;
-	boolean estado;
+	public boolean estado;
 	int volumen = 500;
-	Control control;
+	public Control control;
 	static int numTV;
 	
 	TV (Marca marc, boolean est){
