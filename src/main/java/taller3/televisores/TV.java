@@ -95,7 +95,7 @@ public class TV {
 		return this.volumen;
 	}
 	
-	public int getNumTV() {
+	public static int getNumTV() {
 		return numTV;
 	}
 	
