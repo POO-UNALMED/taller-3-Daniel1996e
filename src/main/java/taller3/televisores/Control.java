@@ -13,7 +13,7 @@ public class Control {
 	}
 	
 	public void setCanal(int canal) {
-		if(tv.estado = true & canal > 0 & canal <= 120) {
+		if(tv.estado == true & canal > 0 & canal <= 120) {
 		tv.canal = canal;
 		}
 	}
@@ -23,13 +23,13 @@ public class Control {
 	}
 	
 	public void canalUp() {
-		if(tv.estado = true & tv.canal < 120) {
+		if(tv.estado == true & tv.canal < 120) {
 		tv.canal ++;
 		}
 	}
 	
 	public void canalDown() {
-		if(tv.estado = true & tv.canal > 0) {
+		if(tv.estado == true & tv.canal > 0) {
 		tv.canal --;
 		}
 	}
@@ -41,7 +41,7 @@ public class Control {
 	}
 	
 	public void volumenDown(){
-		if(tv.estado = true & tv.volumen > 1) {
+		if(tv.estado == true & tv.volumen > 1) {
 			tv.volumen --;
 		}
 	}
