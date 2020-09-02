@@ -7,7 +7,7 @@ public class TV {
 	public boolean estado;
 	int volumen = 500;
 	public Control control;
-	static int numTV;
+	public static int numTV;
 	
 	public TV (Marca marc, boolean est){
 		marca = marc;
@@ -71,8 +71,8 @@ public class TV {
 		}
 	}
 	
-	public void setNumTV(int num) {
-		this.numTV = num;
+	public static  void setNumTV(int num) {
+		TV.numTV = num;
 	}
 	
 	public int getCanal(){
