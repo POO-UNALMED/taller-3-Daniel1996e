@@ -9,7 +9,7 @@ public class TV {
 	public Control control;
 	static int numTV;
 	
-	TV (Marca marc, boolean est){
+	public TV (Marca marc, boolean est){
 		marca = marc;
 		estado = est;
 		numTV ++;
@@ -71,6 +71,10 @@ public class TV {
 		}
 	}
 	
+	public void setNumTV(int num) {
+		this.numTV = num;
+	}
+	
 	public int getCanal(){
 		return this.canal;
 	}
@@ -98,5 +102,4 @@ public class TV {
 	public boolean getEstado() {
 		return this.estado;
 	}
-	
 }
